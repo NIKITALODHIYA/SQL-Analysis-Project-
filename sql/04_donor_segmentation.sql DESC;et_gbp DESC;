@@ -1,14 +1,15 @@
 SELECT 
-    d.borough,
-    COUNT(*) AS settled_donations,
-    SUM(f.net_amount_gbp) AS net_gbp,
-    ROUND(AVG(f.net_amount_gbp), 0) AS avg_net_gbp,
-    ROUND(AVG(d.gift_aid_eligible_flag), 3) AS pct_gift_aid_eligible
+    d.donor_type,
+    d.crm_segment,
+    COUNT(DISTINCT f.donor_id) AS donors,
+    COUNT(*) AS donations,
+    SUM(f.net_amount_gbp) AS total_net_gbp,
+    ROUND(AVG(f.net_amount_gbp), 0) AS avg_net_gbp
 FROM
     fundraising f
         JOIN
     donors d ON d.donor_id = f.donor_id
 WHERE
     f.status = 'Settled'
-GROUP BY d.borough
-ORDER BY net_gbp DESC;
+GROUP BY d.donor_type , d.crm_segment
+ORDER BY total_net_gbp DESC;
