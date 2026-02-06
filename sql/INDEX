@@ -1,0 +1,21 @@
+SQL-Analysis-Project/
+│
+├── README.md
+│
+├── sql/Queries Script
+│   ├── 01_monthly_fundraising.sql
+│   ├── 02_new_vs_returning.sql
+│   ├── 03_payment_channels.sql
+│   ├── 04_donor_segmentation.sql
+│   ├── 05_geo_giftaid.sql
+│   └── 06_indexes_and_optimisation.sql
+│
+├── outputs/
+│   ├── monthly_fundraising.csv
+│   ├── new_vs_returning.csv
+│   ├── payment_channels.csv
+│   ├── donor_segmentation.csv
+│   └── geo_giftaid.csv
+│
+└── video/
+    └── project_walkthrough
