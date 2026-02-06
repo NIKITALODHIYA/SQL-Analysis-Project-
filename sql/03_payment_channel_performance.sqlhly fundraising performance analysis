@@ -1,0 +1,36 @@
+SELECT 
+    payment_channel,
+    COUNT(*) AS total_attempts,
+    SUM(CASE
+        WHEN status = 'Settled' THEN 1
+        ELSE 0
+    END) AS settled_count,
+    ROUND(SUM(CASE
+                WHEN status = 'Settled' THEN 1
+                ELSE 0
+            END) / COUNT(*),
+            3) AS settle_rate,
+    SUM(CASE
+        WHEN status = 'Settled' THEN net_amount_gbp
+        ELSE 0
+    END) AS net_gbp,
+    SUM(CASE
+        WHEN status = 'Settled' THEN processing_fee_gbp
+        ELSE 0
+    END) AS fees_gbp,
+    ROUND(SUM(CASE
+                WHEN status = 'Settled' THEN processing_fee_gbp
+                ELSE 0
+            END) / NULLIF(SUM(CASE
+                        WHEN status = 'Settled' THEN gross_amount_gbp
+                        ELSE 0
+                    END),
+                    0),
+            4) AS fee_rate
+FROM
+    fundraising
+GROUP BY payment_channel
+ORDER BY net_gbp DESC;
+
+
+ORDER BY total_net_gbp DESC;
