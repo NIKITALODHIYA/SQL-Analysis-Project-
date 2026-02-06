@@ -1,3 +1,10 @@
+## Project Walkthrough Video
+
+A 60-second walkthrough explaining the data, SQL analysis, key insights, and performance optimisation decisions.
+
+📹 Watch here: [Project Walkthrough Video](PASTE_YOUR_LINK_HERE)
+
+
 # SQL Analysis Project – London Non-Profit  
 *(Fundraising & Donor Analysis)*
 
