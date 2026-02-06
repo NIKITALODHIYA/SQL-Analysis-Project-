@@ -1,0 +1,22 @@
+ALTER TABLE fundraising
+MODIFY donor_id VARCHAR(50);
+
+-- Speeds up donor-based joins and retention analysis
+CREATE INDEX idx_fundraising_donor_date
+ON fundraising (donor_id, donation_date);
+
+ALTER TABLE fundraising
+MODIFY status VARCHAR(20);
+
+-- Improves filtering by settlement status and time-based reporting
+CREATE INDEX idx_fundraising_status_date
+ON fundraising (status, donation_date);
+
+ALTER TABLE donors
+MODIFY donor_type VARCHAR(50),
+MODIFY crm_segment VARCHAR(50);
+
+-- Optimises segmentation queries
+CREATE INDEX idx_donors_type_segment
+ON donors (donor_type, crm_segment);
+
