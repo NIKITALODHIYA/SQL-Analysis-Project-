@@ -1,0 +1,16 @@
+donor_type,crm_segment,donors,donations,total_net_gbp,avg_net_gbp
+Individual,Active,3962,19034,1279072,67
+Corporate,Active,754,3596,612221,170
+Individual,Warm,1929,9217,611933,66
+Individual,New,1732,8342,568337,68
+Individual,Lapsed,1133,5538,381336,69
+Trust/Foundation,Active,264,1265,351086,278
+Corporate,Warm,358,1690,287083,170
+Corporate,New,333,1637,280467,171
+Individual,"High Value",732,3392,220296,65
+Corporate,Lapsed,210,1024,166024,162
+Trust/Foundation,Warm,113,524,144383,276
+Trust/Foundation,New,102,468,140495,300
+Corporate,"High Value",154,746,126040,169
+Trust/Foundation,"High Value",49,266,72718,273
+Trust/Foundation,Lapsed,61,251,56163,224

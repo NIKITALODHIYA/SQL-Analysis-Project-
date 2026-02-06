@@ -1,0 +1,7 @@
+payment_channel,total_attempts,settled_count,settle_rate,net_gbp,fees_gbp,fee_rate
+"Payroll Giving",10035,9530,0.950,904749,0,0.0000
+"Direct Debit",10170,9643,0.948,893654,8394,0.0093
+"Bank Transfer",10012,9504,0.949,893297,0,0.0000
+"Corporate Match",10007,9526,0.952,886840,0,0.0000
+Event,10007,9511,0.950,885511,8221,0.0092
+Website,9769,9276,0.950,833603,16818,0.0198
