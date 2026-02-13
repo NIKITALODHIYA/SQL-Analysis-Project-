@@ -6,7 +6,7 @@
 
 A 60-second walkthrough explaining the data, SQL analysis, key insights, and performance optimisation decisions.
 
-📹 Watch here: [Project Walkthrough Video](PASTE_YOUR_LINK_HERE)
+📹 Watch here: [Project Walkthrough Video]([PASTE_YOUR_LINK_HERE](https://drive.google.com/file/d/1XFnHVQqn29rAVsfujHuo5R0D46RsHHUG/view?usp=drive_link))
 
 
 
