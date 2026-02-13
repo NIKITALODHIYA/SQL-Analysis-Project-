@@ -4,7 +4,7 @@
 
 ## Project Walkthrough Video
 
-A 60-second walkthrough explaining the data, SQL analysis, key insights, and performance optimisation decisions.
+A few second walkthrough explaining the data, SQL analysis, key insights, and performance optimisation decisions.
 
 🎥 **Watch it here:**
 [Project Walkthrough Video](https://drive.google.com/file/d/1XFnHVQqn29rAVsfujHuo5R0D46RsHHUG/view?usp=drive_link)
